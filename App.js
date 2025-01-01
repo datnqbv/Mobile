@@ -14,7 +14,7 @@ export default function App() {
 
   return (
     <SafeAreaView style={styles.container}>
-      <Text style={styles.header}>Login </Text>
+      <Text style={styles.header}>Xin chao</Text>
       <Text style={styles.paragraph}>Nhập số điện thoại</Text>
       <Text style={styles.des}>
         Dùng số điện thoại để đăng nhập hoặc đăng ký tài khoản tại OneHousing Pro
