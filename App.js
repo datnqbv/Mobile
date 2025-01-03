@@ -14,8 +14,8 @@ export default function App() {
 
   return (
     <SafeAreaView style={styles.container}>
-      <Text style={styles.header}>Đăng nhập 12345 </Text>
-      <Text style={styles.paragraph}>Nhập số điện thoại</Text>
+      <Text style={styles.header}>Đăng nhập</Text>
+      <Text style={styles.paragraph}>Nhập số điện thoại:</Text>
       <Text style={styles.des}>
         Dùng số điện thoại để đăng nhập hoặc đăng ký tài khoản tại OneHousing Pro
       </Text>
@@ -52,12 +52,12 @@ const styles = StyleSheet.create({
     padding: 16,
   },
   paragraph: {
-    marginBottom: 15,
-    fontSize: 16,
+    marginBottom: 13,
+    fontSize: 20,
   },
   des: {
-    marginBottom: 15,
-    fontSize: 14,
+    marginBottom: 16,
+    fontSize: 15,
   },
   header: {
     marginBottom: 30,
