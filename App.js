@@ -14,7 +14,7 @@ export default function App() {
 
   return (
     <SafeAreaView style={styles.container}>
-      <Text style={styles.header}>Xin chao</Text>
+      <Text style={styles.header}>Đăng nhập 12345 </Text>
       <Text style={styles.paragraph}>Nhập số điện thoại</Text>
       <Text style={styles.des}>
         Dùng số điện thoại để đăng nhập hoặc đăng ký tài khoản tại OneHousing Pro
@@ -48,7 +48,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#ffffff',
+    backgroundColor: 'white',
     padding: 16,
   },
   paragraph: {
