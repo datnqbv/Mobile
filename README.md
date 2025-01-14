@@ -19,3 +19,5 @@ Cấu hình ít hơn, thích hợp cho người mới bắt đầu hoặc danh s
 Phức tạp hơn do cần cấu hình thêm phần nhóm dữ liệu và tiêu đề nhóm.
 Yêu cầu phải hiểu thêm về cấu trúc dữ liệu phân nhóm, nhưng lại rất hữu ích khi cần hiển thị dữ liệu có cấu trúc rõ ràng và phân loại.
 
+Ảnh demo:
+![image](https://github.com/user-attachments/assets/03f5907e-e23f-41e7-a6fe-329763bb23dd)
