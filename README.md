@@ -1,23 +1,24 @@
 Phùng Tiến Đạt-22810310228
 
-1,Hiệu năng:
-  FlatList:
-  
-Tối ưu hóa tốt hơn cho danh sách đơn giản và dài, nhờ cơ chế "windowing" (chỉ render những mục cần thiết cho màn hình hiện tại).
-Thích hợp cho các danh sách dài vì nó quản lý hiệu quả bộ nhớ bằng cách chỉ render các mục nhìn thấy được.
-  SectionList:
-  
-Có thể có hiệu năng thấp hơn một chút so với FlatList khi xử lý danh sách phức tạp hoặc dài vì phải quản lý thêm cấu trúc nhóm.
-Tuy nhiên, vẫn được tối ưu hóa tốt và có thể xử lý danh sách lớn với các nhóm.
-2, Tính dễ sử dụng:
-  FlatList:
-  
-Dễ sử dụng cho các danh sách đơn giản, chỉ cần cấu hình mảng dữ liệu và hàm render.
-Cấu hình ít hơn, thích hợp cho người mới bắt đầu hoặc danh sách không phân nhóm.
-  SectionList:
-  
-Phức tạp hơn do cần cấu hình thêm phần nhóm dữ liệu và tiêu đề nhóm.
-Yêu cầu phải hiểu thêm về cấu trúc dữ liệu phân nhóm, nhưng lại rất hữu ích khi cần hiển thị dữ liệu có cấu trúc rõ ràng và phân loại.
+So sánh FlatList và SectionList
 
-Ảnh demo:
-![image](https://github.com/user-attachments/assets/03f5907e-e23f-41e7-a6fe-329763bb23dd)
+Mục đích sử dụng
+FlatList: Hiển thị danh sách các mục đơn giản, không cần nhóm. Thích hợp với danh sách liên tục, chẳng hạn như danh sách sản phẩm, người dùng, bài viết.
+
+SectionList: Hiển thị danh sách phân nhóm với tiêu đề (header) cho từng nhóm. Phù hợp khi bạn cần tổ chức dữ liệu thành các phần, như danh sách danh mục, thời gian biểu, hoặc lịch trình.
+
+Cấu trúc dữ liệu
+FlatList: Dữ liệu là một mảng các đối tượng.
+
+SectionList: Dữ liệu là một mảng các đối tượng, trong đó mỗi đối tượng chứa: title: Tiêu đề của nhóm. data: Một mảng các mục trong nhóm.
+
+Hiệu năng
+FlatList: Tối ưu hóa tốt cho danh sách lớn bằng cách render từng phần tử khi cần thiết. Cung cấp tính năng như lazy loading (hiển thị một phần danh sách) để giảm tải tài nguyên.
+
+SectionList: Hiệu năng tương tự FlatList cho danh sách lớn. Khi làm việc với dữ liệu phân nhóm lớn, SectionList có thể cần xử lý thêm phần render các tiêu đề, làm tăng chi phí tính toán.
+
+Tính dễ sử dụng
+FlatList: Dễ thiết lập hơn, vì chỉ cần truyền một mảng và các phương thức cơ bản (renderItem, keyExtractor). Giao diện rõ ràng, ít phức tạp.
+SectionList: Yêu cầu cấu trúc dữ liệu phức tạp hơn (phải nhóm dữ liệu). Cần định nghĩa thêm các phương thức như renderSectionHeader để hiển thị tiêu đề nhóm. Dễ bị nhầm lẫn khi cấu trúc dữ liệu không đúng.
+
+
