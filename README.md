@@ -21,4 +21,8 @@ Tính dễ sử dụng
 FlatList: Dễ thiết lập hơn, vì chỉ cần truyền một mảng và các phương thức cơ bản (renderItem, keyExtractor). Giao diện rõ ràng, ít phức tạp.
 SectionList: Yêu cầu cấu trúc dữ liệu phức tạp hơn (phải nhóm dữ liệu). Cần định nghĩa thêm các phương thức như renderSectionHeader để hiển thị tiêu đề nhóm. Dễ bị nhầm lẫn khi cấu trúc dữ liệu không đúng.
 
+ảnh demo:
+![image](https://github.com/user-attachments/assets/98349a45-7142-4599-ac35-674c9cccf3be)
+
+
 
