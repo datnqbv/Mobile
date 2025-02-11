@@ -1,20 +1,34 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React, { useState } from "react";
+import { View, Text, StyleSheet } from "react-native";
+import ColorButton from "./Component/ColorButton";
 
-export default function App() {
+const App = () => {
+  const [backgroundColor, setBackgroundColor] = useState("green");
+
   return (
-    <View style={styles.container}>
-      <Text>Hello Dat</Text>
-      <StatusBar style="auto" />
+    <View style={[styles.container, { backgroundColor }]}>
+      <Text style={[styles.text, { color: backgroundColor === "yellow" ? "black" : "white" }]}>
+        {backgroundColor.toUpperCase()}
+      </Text>
+
+      {["green", "blue", "brown", "yellow", "red", "black"].map((color) => (
+        <ColorButton key={color} color={color} onPress={setBackgroundColor} />
+      ))}
     </View>
   );
-}
+};
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  text: {
+    fontSize: 24,
+    marginBottom: 20,
+    fontWeight: "bold",
   },
 });
+
+export default App;
